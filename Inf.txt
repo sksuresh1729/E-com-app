@@ -1,0 +1,254 @@
+https://stackoverflow.com/questions/63489607/react-redux-throwing-dispatch-is-not-a-function-whenever-i-attempt-to-remov
+
+{
+  "name": "shopping_cart",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.1",
+    "redux-actions-async": "^0.3.2",
+    "redux-thunk": "^2.3.0",
+    "redux-logger": "^3.0.6",
+    "jest-junit-reporter": "1.1.0"
+  },
+  "scripts": {
+    "start": "export PORT=8000 && react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "pretest": "npm install",
+    "test": "rm -rf ./unit.xml && CI=true ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit-reporter --coverage --collectCoverageFrom=src/index.js --updateSnapshot",
+    "lint": "eslint ./src -o eslint.xml -f junit; exit 0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
+user@workspacef11rveu8qjinmcoj:/projects/challenge$ npm test
+
+> shopping_cart@0.1.0 pretest /projects/challenge
+> npm install
+
+[..................] | rollbackFailedOptional: verb npm-session 2a9a[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] | preinstall:shopping_cart: info lifecycle shop[ .................] / loadIdealTree:loadAllDepsIntoIdealTree: sill [  ................] \ loadDep:jest-junit-reporter: sill install loa[   ...............] \ loadDep:whatwg-fetch: sill install loadAllDep[   ...............] \ loadDep:lodash: sill install loadAllDepsIntoI[   ...............] \ loadDep:arr-flatten: sill install loadAllDeps[   ...............] \ loadDep:mkdirp: sill install loadAllDepsIntoI[   ...............] \ loadDep:semver: sill install loadAllDepsIntoI[   ...............] \ loadDep:babel-types: sill install loadAllDeps[   ...............] \ loadDep:postcss-zindex: sill install loadAllD[   ...............] \ loadDep:has-flag: sill install loadAllDepsInt[   ...............] \ loadDep:supports-color: sill install loadAllD[   ...............] \ loadDep:whet.extend: sill install loadAllDeps[   ...............] \ loadDep:json-schema-traverse: sill install lo[   ...............] \ loadDep:which: sill install loadAllDepsIntoId[   ...............] \ loadDep:ansi-regex: sill install loadAllDepsI[   ...............] \ loadDep:read-pkg-up: sill install loadAllDeps[   ...............] \ loadDep:webpack-sources: sill install loadAll[   ...............] \ loadDep:yallist: sill install loadAllDepsInto[   ...............] \ loadDep:yargs: sill install loadAllDepsIntoId[   ...............] \ loadDep:xml-name-validator: sill install load[   ...............] \ loadDep:punycode: sill install loadAllDepsInt[   ...............] \ loadDep:yargs: sill install loadAllDepsIntoId[   ...............] \ loadDep:text-table: sill install loadAllDepsI[   ...............] \ loadDep:is-path-inside: sill install loadAllD[   ...............] \ loadDep:strip-eof: sill install loadAllDepsIn[   ...............] \ loadDep:yargs: sill install loadAllDepsIntoId[   ...............] \ loadDep:pako: sill install loadAllDepsIntoIde[   ...............] \ loadDep:minimalistic-crypto-utils: sill insta[   ...............] \ loadDep:upath: sill install loadAllDepsIntoId[   ...............] \ loadDep:split-string: sill install loadAllDep[   ...............] \ loadDep:safe-regex: sill install loadAllDepsI[   ...............] \ loadDep:to-regex: sill install loadAllDepsInt[   ...............] \ loadDep:strip-bom: sill install loadAllDepsIn[   ...............] \ loadDep:vary: sill install loadAllDepsIntoIde[   ...............] \ loadDep:mime-types: sill install loadAllDepsI[   ...............] \ loadDep:spdy-transport: sill install loadAllD[    ..............] \ loadDevDep:enzyme-adapter-react-16: sill inst[    ..............] \ loadDep:semver: sill install loadAllDepsIntoI[       ...........] | diffTrees: [       ...........] | diffTrees: [       ...........] \ postinstall[       ...........] / extract:nan: verb lock using /home/user/.npm/_locks/staging-356b12b571c927db.lo[       ...........] \ extract:nan: verb lock using /home/user/.npm/_locks/staging-356b12b571c927db.lo[          ........] / extract:file-uri-to-path: sill extract file-uri-to-path@1.0.0 extracted to /pro[           .......] - extract:nan: sill extract nan@2.14.0 extracted to /projects/challenge/node_modu[           .......] - extract:nan: sill extract nan@2.14.0 extracted to /projects/challenge/node_modu[           .......] - extract:nan: sill extract nan@2.14.0 extracted to /projects/challenge/node_modu[           .......] \ extract:nan: sill extract nan@2.14.0 extracted to /projects/challenge/node_modu[            ......] | finalize:minimist: sill finalize /projects/challenge/node_modules/fsevents/node[            ......] \ refresh-package-json:fsevents: timing action:[            ......] \ refresh-package-json:fsevents: timing action:[            ......] / refresh-package-json:minimist: sill refresh-package-json /projects/challenge/no[            ......] | postinstall[            ......] | postinstall[             .....] \ prepare:shopping_cart: info lifecycle shopping_cart@0.1.0~prepare: shopping_car[             .....] \ prepare:shopping_cart: info lifecycle shopping_cart@0.1.0~prepare: shopping_carnpm WARN ajv-keywords@3.4.1 requires a peer of ajv@^6.9.1 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 1449 packages in 10.604s
+found 245 vulnerabilities (17 low, 121 moderate, 103 high, 4 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+> shopping_cart@0.1.0 test /projects/challenge
+> rm -rf ./unit.xml && CI=true ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit-reporter --coverage --collectCoverageFrom=src/index.js --updateSnapshot
+
+ FAIL  src/reducers/cart.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: cart is not defined
+      
+      at Object.<anonymous> (src/reducers/cart.js:14:1)
+      at Object.<anonymous> (src/reducers/cart.spec.js:1:115)
+      at handle (node_modules/worker-farm/lib/child/index.js:44:8)
+      at process.<anonymous> (node_modules/worker-farm/lib/child/index.js:55:3)
+      at emitTwo (events.js:126:13)
+      at process.emit (events.js:214:7)
+      at emit (internal/child_process.js:762:12)
+      at _combinedTickCallback (internal/process/next_tick.js:142:11)
+      at process._tickCallback (internal/process/next_tick.js:181:9)
+
+ FAIL  src/reducers/index.spec.js
+  ● Test suite failed to run
+
+    ReferenceError: cart is not defined
+      
+      at Object.<anonymous> (src/reducers/cart.js:14:1)
+      at Object.<anonymous> (src/reducers/index.js:2:13)
+      at Object.<anonymous> (src/reducers/index.spec.js:1:116)
+      at handle (node_modules/worker-farm/lib/child/index.js:44:8)
+      at process.<anonymous> (node_modules/worker-farm/lib/child/index.js:55:3)
+      at emitTwo (events.js:126:13)
+      at process.emit (events.js:214:7)
+      at emit (internal/child_process.js:762:12)
+      at _combinedTickCallback (internal/process/next_tick.js:142:11)
+      at process._tickCallback (internal/process/next_tick.js:181:9)
+
+ FAIL  src/components/ProductsList.spec.js
+  ● Test suite failed to run
+
+    /projects/challenge/src/components/ProductsList.js: Unexpected token (6:0)
+        4 | const ProductsList = ({  }) => (
+        5 |   // should render product title and its children 
+      > 6 | )
+          | ^
+        7 | 
+        8 | ProductsList.propTypes = {
+        9 |   children: PropTypes.node,
+
+ FAIL  src/components/ProductItem.spec.js
+  ● Test suite failed to run
+
+    /projects/challenge/src/components/Product.js: Unexpected token (7:0)
+         5 |   // product component should render title and price
+         6 |   // It should render title, price and quantity when given inventory
+      >  7 | )
+           | ^
+         8 | 
+         9 | Product.propTypes = {
+        10 |   price: PropTypes.number,
+
+ FAIL  src/components/Cart.spec.js
+  ● Test suite failed to run
+
+    /projects/challenge/src/components/Product.js: Unexpected token (7:0)
+         5 |   // product component should render title and price
+         6 |   // It should render title, price and quantity when given inventory
+      >  7 | )
+           | ^
+         8 | 
+         9 | Product.propTypes = {
+        10 |   price: PropTypes.number,
+
+ FAIL  src/components/Product.spec.js
+  ● Test suite failed to run
+
+    /projects/challenge/src/components/Product.js: Unexpected token (7:0)
+         5 |   // product component should render title and price
+         6 |   // It should render title, price and quantity when given inventory
+      >  7 | )
+           | ^
+         8 | 
+         9 | Product.propTypes = {
+        10 |   price: PropTypes.number,
+
+ FAIL  src/reducers/products.spec.js (6.221s)
+  ● reducers › products › when products are received › contains the products from the action
+
+    TypeError: (0 , products.default) is not a function
+      
+      at Object.beforeEach (src/reducers/products.spec.js:14:38)
+          at new Promise (<anonymous>)
+      at Promise.resolve.then.el (node_modules/p-map/index.js:46:16)
+          at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:189:7)
+
+  ● reducers › products › when products are received › contains the products from the action
+
+    TypeError: products.getProduct is not a function
+      
+      at Object.it (src/reducers/products.spec.js:32:25)
+          at new Promise (<anonymous>)
+      at Promise.resolve.then.el (node_modules/p-map/index.js:46:16)
+          at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:189:7)
+
+  ● reducers › products › when products are received › contains no other products
+
+    TypeError: (0 , products.default) is not a function
+      
+      at Object.beforeEach (src/reducers/products.spec.js:14:38)
+          at new Promise (<anonymous>)
+      at Promise.resolve.then.el (node_modules/p-map/index.js:46:16)
+          at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:189:7)
+
+  ● reducers › products › when products are received › contains no other products
+
+    TypeError: products.getProduct is not a function
+      
+      at Object.it (src/reducers/products.spec.js:45:25)
+          at new Promise (<anonymous>)
+      at Promise.resolve.then.el (node_modules/p-map/index.js:46:16)
+          at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:189:7)
+
+  ● reducers › products › when products are received › lists all of the products as visible
+
+    TypeError: (0 , products.default) is not a function
+      
+      at Object.beforeEach (src/reducers/products.spec.js:14:38)
+          at new Promise (<anonymous>)
+      at Promise.resolve.then.el (node_modules/p-map/index.js:46:16)
+          at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:189:7)
+
+  ● reducers › products › when products are received › lists all of the products as visible
+
+    TypeError: products.getVisibleProducts is not a function
+      
+      at Object.it (src/reducers/products.spec.js:49:25)
+          at new Promise (<anonymous>)
+      at Promise.resolve.then.el (node_modules/p-map/index.js:46:16)
+          at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:189:7)
+
+  ● reducers › products › when products are received › when an item is added to the cart › the inventory is reduced
+
+    TypeError: (0 , products.default) is not a function
+      
+      at Object.beforeEach (src/reducers/products.spec.js:14:38)
+          at new Promise (<anonymous>)
+      at Promise.resolve.then.el (node_modules/p-map/index.js:46:16)
+          at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:189:7)
+
+  ● reducers › products › when products are received › when an item is added to the cart › the inventory is reduced
+
+    TypeError: (0 , products.default) is not a function
+      
+      at Object.beforeEach (src/reducers/products.spec.js:65:40)
+          at new Promise (<anonymous>)
+      at Promise.resolve.then.el (node_modules/p-map/index.js:46:16)
+          at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:189:7)
+
+  ● reducers › products › when products are received › when an item is added to the cart › the inventory is reduced
+
+    TypeError: products.getVisibleProducts is not a function
+      
+      at Object.it (src/reducers/products.spec.js:69:27)
+          at new Promise (<anonymous>)
+      at Promise.resolve.then.el (node_modules/p-map/index.js:46:16)
+          at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:189:7)
+
+  reducers
+    products
+      when products are received
+        ✕ contains the products from the action (3ms)
+        ✕ contains no other products (1ms)
+        ✕ lists all of the products as visible
+        when an item is added to the cart
+          ✕ the inventory is reduced
+
+Test Suites: 7 failed, 7 total
+Tests:       4 failed, 4 total
+Snapshots:   0 total
+Time:        10.552s
+Ran all test suites.
+----------|----------|----------|----------|----------|-------------------|
+File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+----------|----------|----------|----------|----------|-------------------|
+All files |        0 |        0 |        0 |        0 |                   |
+ index.js |        0 |        0 |        0 |        0 |... 12,13,16,21,23 |
+----------|----------|----------|----------|----------|-------------------|
+npm ERR! Test failed.  See above for more details.
+user@workspacef11rveu8qjinmcoj:/pruser@workspacef11rveu8qjinmcoj:/projects/challenge$ 
